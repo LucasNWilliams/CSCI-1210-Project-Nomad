@@ -1,3 +1,11 @@
+:root {
+    --pink1: #FFDDDB;
+    --pink2: #FFAFAB;
+    --pink3: #FF908A;
+    --pink4: #DF6B65;
+    --pink5: #833834;
+}
+
 body {
-    background: #FFDDDB;
+    background: var(--pink1);
 }
