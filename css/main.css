@@ -13,6 +13,11 @@ body {
     margin: 0;
 }
 
+header {
+    padding: 20px;
+    border-bottom: 1px black solid;
+}
+
 /* TODO Update when header background is added */
 /* header {
     background-image: linear-gradient(transparent %, white 100%), url;
