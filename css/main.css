@@ -1,4 +1,6 @@
 :root {
+    /* CSS Variables */
+    /* Use var(variable-name) to use (see background in body)  */
     --pink1: #FFDDDB;
     --pink2: #FFAFAB;
     --pink3: #FF908A;
@@ -8,4 +10,12 @@
 
 body {
     background: var(--pink1);
+    margin: 0;
 }
+
+/* TODO Update when header background is added */
+/* header {
+    background-image: linear-gradient(transparent %, white 100%), url;
+    background-size: cover;
+    background-position: center;
+} */
