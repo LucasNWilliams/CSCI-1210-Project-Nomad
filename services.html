@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Services - Lex'd Up Nails</title>
     <meta name="author" content="Christian Montalbano">
     <meta name="date" content="11/12/2026">
@@ -9,30 +10,97 @@
     <meta name="description" content="services page for Lex'd Up Nails.">
     <meta name="keywords" content="lex'd, up, nails, ">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/services.css">
 
-    <!-- /.html
+    <!-- services.html
         Author:         Christian Montalbano
         Date:           11/12/2026
         Last Revised:   11/12/2026
         Description:    Services page for Lex'd Up Nails.
     -->
 </head>
-<body>
+<body class="services-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
+
+        <img src="images/logo.png"
+        alt="Lex'd Up Nails logo"
+        class="header-logo"
+        width="160"
+        height="160">
+
         <h1>Services</h1>
-        <nav>
+        <nav aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="contact.html">Contact</a>
             <a href="faq.html">FAQ</a>
-            <a href="services.html">Services</a>
+            <a href="services.html" aria-current="page">Services</a>
             <a href="gallery.html">Gallery</a>
             <a href="about.html">Meet Your Nail Tech</a>
         </nav>
     </header>
-    <main>
-        <section></section>
+    <main id="main-content" tabindex="-1">
+        <section class="services-intro" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Find your perfect set</h2>
+            <p>Explore nail care, extensions, and custom nail art at Lex'd Up Nails.</p>
+        </section>
+        <div class="service-grid">
+            <section class="service-card" aria-labelledby="care-heading">
+                <h2 id="care-heading">Manicures &amp; Natural Nail Care</h2>
+                <h3>Basic Manicure</h3>
+                <p>Relax with nail cleaning, a massage, and a fresh coat of polish.</p>
+                <h3>Gel Manicure</h3>
+                <p>Regular nail maintenance with cleaning, massage, and a glossy gel polish finish.</p>
+                <h3>Builder Gel</h3>
+                <p>A protective soft gel application that supports natural nail growth.</p>
+            </section>
+            <section class="service-card" aria-labelledby="extensions-heading">
+                <h2 id="extensions-heading">Nail Extensions</h2>
+                <h3>Acrylic Full Set</h3>
+                <p>Acrylic extensions shaped to your preference, with a base for nail art.</p>
+                <h3>Acrylic Fill</h3>
+                <p>Maintenance for existing acrylic nails to fill in new growth and refresh their shape.</p>
+                <h3>Gel-X Full Set</h3>
+                <p>Full-coverage soft gel tips that create a base for nail art and allow for soak-off removal.</p>
+            </section>
+            <section class="service-card" aria-labelledby="art-heading">
+                <h2 id="art-heading">Custom Nail Art</h2>
+                <p>Personalize your nails with creative details:</p>
+                <ul>
+                    <li>Hand-painted designs</li>
+                    <li>Nail charms and stickers</li>
+                    <li>3D sculpting</li>
+                </ul>
+            </section>
+            <section class="service-card" aria-labelledby="removal-heading">
+                <h2 id="removal-heading">Removal Services</h2>
+                <h3>Polish or Nail Extension Removal</h3>
+                <p>Soak-off removal of polish or compatible nail extensions.</p>
+            </section>
+        </div>
+        <p class="care-note">All services include proper nail and cuticle care, cleaning, and a coat of polish.</p>
+        <section class="work-section" aria-labelledby="work-heading">
+            <h2 id="work-heading">Just a Few Examples of My Work</h2>
+            <div class="photo-grid">
+                <figure><img src="images/services-purple.jpg" alt="Short square nails with purple glitter, glossy purple polish, and white accent nails."><figcaption>Purple and white accents</figcaption></figure>
+                <figure><img src="images/services-mauve.jpg" alt="Short rounded nails painted in glossy muted mauve."><figcaption>Glossy mauve</figcaption></figure>
+                <figure><img src="images/services-orange.jpg" alt="Almond-shaped nails with warm orange polish and subtle glitter accents."><figcaption>Warm orange with sparkle</figcaption></figure>
+            </div>
+        </section>
+        <section class="services-contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Ready for your next appointment?</h2>
+            <p>Get in touch with Lexxe to discuss services, pricing, and availability.</p>
+
+            <img src="images/business-card-front.png"
+            alt="Lex'd Up Nails business card featuring the salon logo on a decorative pink background."
+            class="business-card"
+            width="1017"
+            height="582">
+
+            <a class="contact-link" href="contact.html">Contact Lexxe</a>
+        </section>
     </main>
-    <footer></footer>
+    <footer><p>Lex'd Up Nails</p></footer>
 
     <script src="/js/w3c.js"></script>
 </body>

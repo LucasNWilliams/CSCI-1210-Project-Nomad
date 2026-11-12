@@ -1,0 +1,64 @@
+/* Services page only: shared colors come from main.css. */
+.services-page { font-family: Arial, sans-serif; color: #432522; line-height: 1.6; }
+.services-page * { box-sizing: border-box; }
+
+.services-page header {
+    background-color: var(--pink5);
+
+    background-image: 
+        linear-gradient(
+            rgba(60, 20, 20, 0.55),
+            rgba(60, 20, 20, 0.55)
+        ),
+        url("../images/header-background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.services-page .business-card {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+.services-page header h1 { margin: 0 0 12px; }
+.services-page nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; }
+.services-page nav a { color: white; padding: 6px; }
+.services-page nav a[aria-current="page"] { font-weight: bold; text-decoration-thickness: 3px; }
+.services-page a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+.services-page .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); background: white; color: var(--pink5); padding: 12px; z-index: 10; }
+.services-page .skip-link:focus { transform: none; }
+.services-page main { max-width: 1100px; margin: auto; padding: 24px 16px; }
+.services-page main h2 { color: var(--pink5); line-height: 1.25; margin-top: 0; }
+.services-page main h3 { font-size: 1.1rem; margin-bottom: 4px; }
+.services-page main p { margin-top: 0; }
+.services-page .services-intro { text-align: center; margin: 20px 0 32px; }
+.services-page .services-intro h2 { font-size: 2rem; }
+.services-page .service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.services-page .service-card { background: white; border: 1px solid var(--pink4); border-radius: 14px; padding: 24px; }
+.services-page .service-card h2 { border-bottom: 2px solid var(--pink2); padding-bottom: 12px; }
+.services-page .care-note { background: var(--pink2); padding: 18px; border-radius: 10px; margin: 24px 0; font-weight: bold; }
+.services-page .work-section { margin: 32px 0; }
+.services-page .photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.services-page figure { margin: 0; background: white; border-radius: 12px; overflow: hidden; }
+.services-page figure img { display: block; width: 100%; height: auto; }
+.services-page figcaption { padding: 12px; text-align: center; }
+.services-page .services-contact { text-align: center; background: white; padding: 24px; border-radius: 14px; }
+.services-page .contact-link { display: inline-block; background: var(--pink5); color: white; padding: 12px 22px; border-radius: 8px; font-weight: bold; }
+.services-page footer { background: var(--pink5); color: white; text-align: center; padding: 16px; }
+.services-page footer p { margin: 0; }
+@media (max-width: 700px) {
+    .services-page .service-grid, .services-page .photo-grid { grid-template-columns: 1fr; }
+    .services-page .service-card { padding: 18px; }
+}
