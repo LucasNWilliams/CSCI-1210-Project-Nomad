@@ -9,6 +9,7 @@
 }
 
 body {
+    font-size: 1em;
     background: var(--pink1);
     margin: 0;
 }
