@@ -12,11 +12,42 @@ body {
     font-size: 1em;
     background: var(--pink1);
     margin: 0;
+    font-family: Arial, sans-serif; 
+    color: #432522; 
+    line-height: 1.6;
 }
 
 header {
     padding: 20px;
-    border-bottom: 1px black solid;
+    /* border-bottom: 1px black solid; */
+}
+
+header {
+    background-color: var(--pink5);
+    min-height: 220px; 
+
+    background-image: 
+        linear-gradient(
+            rgba(60, 20, 20, 0.55),
+            rgba(60, 20, 20, 0.55)
+        ),
+        url("../images/header-background.png");
+
+
+    mask-image: linear-gradient(to bottom, black 90%, transparent 97%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+
+    h1 { margin: 0 0 12px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 18px; }
+    nav a { color: white; padding: 6px; }
+    nav a[aria-current="page"] { font-weight: bold; text-decoration-thickness: 3px; }
+
 }
 
 /* TODO Update when header background is added */
