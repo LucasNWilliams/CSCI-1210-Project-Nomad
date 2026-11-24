@@ -6,6 +6,9 @@
     --pink3: #FF908A;
     --pink4: #DF6B65;
     --pink5: #833834;
+
+    --primary: var(--pink3);
+    --secondary: var(--pink2)
 }
 
 body {
