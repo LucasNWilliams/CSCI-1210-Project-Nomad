@@ -24,3 +24,57 @@ header {
     background-size: cover;
     background-position: center;
 } */
+
+/* FAQ Page */
+
+.faq {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.faq h2 {
+    text-align: center;
+    color: var(--pink5);
+    font-family: "Times New Roman", serif;
+    font-size: 32px;
+}
+
+.faq > p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: var(--pink5);
+    margin-bottom: 30px;
+}
+
+.faq details {
+    background-color: var(--pink2);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.faq summary {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--pink5);
+    cursor: pointer;
+}
+
+.faq details:hover {
+    background-color: var(--pink3);
+}
+
+.faq details[open] {
+    background-color: var(--pink2);
+}
+
+.faq details p,
+.faq details li {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
