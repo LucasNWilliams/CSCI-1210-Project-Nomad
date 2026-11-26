@@ -9,30 +9,41 @@ main> section {
     }
 }
 
-.content {
-    width: 65%;
-    margin: 0 auto;
-}
 
 h2 {
- color: var(--pink5);
+    font-size: 3.5em;
+    color: var(--pink5);
 }
 
-section {
-    display: flex;
-    flex-direction: column;
+main > section {
     margin: auto;
     padding-top: .75rem;
     --test1: calc(500px / 35);
+    text-align: center;
 
     > section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         min-width: 100%;
+        min-height: 60vh;
         padding: 1rem 0;
     }
 
+    > section:nth-child(even) {
+        background: linear-gradient(transparent 0%, var(--secondary) var(--test1), var(--secondary) calc(100% - var(--test1)), transparent 100%);
+    }
+
     > section:last-child {
-        background: linear-gradient(transparent 0%, var(--secondary) var(--test1));
         padding-bottom: 16px;
+    }
+
+
+    a {
+        color: var(--pink5);
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     a.button {
@@ -40,15 +51,23 @@ section {
         background: white;
         border: 2px solid var(--pink5);
         color: black;
-        padding: 12px 22px;
+        padding: 12px 56px;
         border-radius: 8px;
         font-weight: bold;
         text-decoration: none;
     }
 
+    p {
+        font-size: 1.5em;
+    }
+
+    .description {
+        min-height: 40vh;
+    }
+
     .services {
         min-width: 100%;
-        min-height: 500px;
+        min-height: 60vh;
         background: linear-gradient(transparent 0%, var(--secondary) var(--test1), var(--secondary) calc(100% - var(--test1)), transparent 100%);
 
         .listings {
@@ -57,8 +76,9 @@ section {
             margin: 0 auto;
             flex-grow: 2;
             flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
-            gap: 2.5rem;
+            gap: 4rem;
 
             figure {
                 max-width: 80%;
@@ -85,7 +105,6 @@ section {
 }
 
 .questions {
-    min-height: 220px;
     padding-top: 15px;
 }
 
@@ -107,6 +126,6 @@ footer p {
 
 @media screen and (width >= 900px) {
     :root {
-        --image-size: 240px;
+        --image-size: 300px;
     }
 }
