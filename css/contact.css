@@ -1,0 +1,144 @@
+/*
+	Author:	        Teresa Rodriguez-Acosta		
+	Date:			2026-11-17	
+    Last Revised:   2026-11-25
+	Description:	CSS sheet for Contact page for Lex'd Up Nails
+*/
+
+.contact-page {font-family: 'Times New Roman', Times, serif; color: #432522; line-height: 1.6; }
+.contact-page * {box-sizing: border-box; }
+
+.contact-page header { 
+    background-image: 
+        linear-gradient(
+            rgba(60, 20, 20, 0.55),
+            rgba(60, 20, 20, 0.55),
+        ),
+        url("../images/imageheader.png");
+
+	background-color: var(--pink5);	
+	min-height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    color: white;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header-lexxe {
+	text-align: left;
+	color: var(--pink1);
+}
+
+.header-questions {
+	text-align: center;
+	color: var(--pink5);
+	padding-top: 30px;
+}
+
+.textnextto-logo {
+	display: flex;
+	align-items: center; /* vertically centers text with logo */
+	gap: 12px;
+	padding: 10px 20px; 
+}
+
+.logo {
+	display: block;
+	float: left;
+	margin: 0 15px 0 0;
+	height: 100px;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	gap: 8px;
+}
+
+nav li {
+	flex: 1;
+}
+
+nav a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--pink3);
+    color: white;
+	border: 1px solid var(--pink3);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:link,
+nav a:visited {
+    margin-right: 5px;          
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    top: -25px;
+}
+
+nav a:hover,
+nav a:active,
+.current {
+    color: var(--pink5);                     /* These pseudo classes make the display of the anchor elements change when the user hovers the mouse over or clicks on the links */
+    border-bottom: 4px solid var(--pink5); 
+}
+
+
+div {
+    width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    border: var(--pink1); 
+}
+
+/* below this is for the email and phone number text */
+.med {
+	width: 600px;
+    font-size: 1.5rem;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+.pink-bg {
+    background-color: var(--pink2);
+	color: var(--pink5);
+}
+
+.decorate {
+	border-radius: 20px;
+	border-color: var(--pink3);
+	border-style: solid;
+	border-width: 2px;
+}
+
+p {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+	clear: both;
+	line-height: 2em;
+	margin: 0 auto;
+	background-color: var(--pink5);
+	color: var(--pink1);
+	text-align: center;
+}
